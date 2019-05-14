@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  SafariSkyticketToCalendar
+
+  Created by Tomohiro Kumagai on 2019/05/14.
+  Copyright © 2019 Tomohiro Kumagai. All rights reserved.
+*/
+
+CFBundleDisplayName = "skyticket details to calendar.";
+

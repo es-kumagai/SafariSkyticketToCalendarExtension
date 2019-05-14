@@ -1,4 +1,10 @@
 
+// 改行を含むテキストをカレンダーに埋め込める形にします。
+function convertToContentTextFrom(text) {
+    
+    return text.replace(/\n/g, '\\n');
+}
+
 class Event {
     
     constructor(summary, dtstart, dtend, dtstamp, created, description, location, url) {
@@ -51,5 +57,21 @@ class Event {
     getUrl() {
         
         return this._url;
+    }
+    
+    getVEventData() {
+        
+        return [
+                      'BEGIN:VEVENT',
+                      'SUMMARY:' + this.getSummary(),
+                      'DTSTART;TZID=JST;VALUE=DATE-TIME:' + this.getDTStart(),
+                      'DTEND;TZID=JST;VALUE=DATE-TIME:' + this.getDTEnd(),
+                      'DTSTAMP;VALUE=DATE-TIME:' + this.getDTStamp(),
+                      'CREATED;VALUE=DATE-TIME:' + this.getCreated(),
+                      'DESCRIPTION:' + this.getDescription(),
+                      'LOCATION:' + this.getLocation(),
+                      'URL:' + this.getUrl(),
+                      'END:VEVENT'
+                      ];
     }
 }

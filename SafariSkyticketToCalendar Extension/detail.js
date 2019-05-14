@@ -8,15 +8,32 @@ function scrapingDetailPage() {
 
     console.log(String(scheduleTableCount) + ' schedules found.');
     
+    let events = new Array();
+    
     for (let index = 0; index != scheduleTableCount; ++index) {
         
         console.log('Scraping ' + String(index + 1) + ' of ' + String(scheduleTableCount) + ' item ...');
         
         const scheduleTable = scheduleTables[index];
+        const description = scheduleTable.innerText;
         
         const schedule = scrapingScheduleTable(scheduleTable);
-        const event = createEventFromSchedule(schedule);
+        const event = createEventFromSchedule(schedule, description);
+        
+        events.push(event);
     }
+    
+    console.log('Creating Calendar Data ...');
+    
+    const caption = 'skyticket reservation';
+    const data = createCalendarDataWithEvents(caption, events);
+    const dataURI = createDataURI(data);
+
+    console.log('Downloading calendar data ...');
+    
+    window.open(dataURI, caption);
+    
+    console.log('Process finished.');
 }
 
 function scrapingScheduleTable(targetNode) {
@@ -156,7 +173,64 @@ function scrapingSchedulePassengers(targetNode) {
     return names;
 }
 
-function createEventFromSchedule(schedule) {
+function createEventFromSchedule(schedule, descriptionText) {
 
+    console.log('Creating an event ...');
     
+    const ticketHeader = schedule.getTicketHeader();
+    const airlineNumber = schedule.getAirlineNumber();
+    const ticketBody = schedule.getTicketBody();
+    const passengers = schedule.getPassengers();
+    
+    const fligntNumber = ticketHeader.getFlightNumber();
+    const departureDateTime = ticketBody.getDepartureDateTime();
+    const arrivalDateTime = ticketBody.getArrivalDateTime();
+    const departurePortLocation = ticketBody.getDeparturePortLocation();
+
+    console.log('Flight Number: ' + fligntNumber);
+    console.log('Departure Date: ' + departureDateTime);
+    console.log('Arrival Date: ' + arrivalDateTime);
+    console.log('Departure Port: ' + departurePortLocation);
+    
+    const currentDateTime = new Date();
+    
+    const summary = convertToContentTextFrom(fligntNumber);
+    const dtstart = getCalendarDateTimeAsString(departureDateTime);
+    const dtend = getCalendarDateTimeAsString(arrivalDateTime);
+    const dtstamp = getCalendarDateTimeAsString(currentDateTime);
+    const created = getCalendarDateTimeAsString(currentDateTime);
+    const description = convertToContentTextFrom(descriptionText);
+    const location = convertToContentTextFrom(departurePortLocation);
+    const url = document.location;
+    
+    return new Event(summary, dtstart, dtend, dtstamp, created, description, location, url);
+}
+
+function createCalendarDataWithEvents(caption, events) {
+    
+    let data = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//ez-net.jp//JRExpressRideToCalendar',
+                'CALSCALE:GREGORIAN',
+                'METHOD:PUBLISH',
+                'X-WR-CALNAME:' + convertToContentTextFrom(caption),
+                'X-WR-TIMEZONE:JST'
+                ];
+    
+    for (let index = 0; index != events.length; ++index) {
+        
+        data = data.concat(events[index].getVEventData());
+    }
+    
+    data = data.concat([
+                        'END:VCALENDAR'
+                        ]);
+    
+    return data;
+}
+
+function createDataURI(data) {
+    
+    return 'data:text/calendar;charset=utf8,' + encodeURI(data.join('\n'));
 }

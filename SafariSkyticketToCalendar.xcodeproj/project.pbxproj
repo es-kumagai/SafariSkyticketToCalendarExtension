@@ -14,6 +14,7 @@
 		B1553ED8228B106400AF47F2 /* calendar.js in Resources */ = {isa = PBXBuildFile; fileRef = B1553ED7228B106400AF47F2 /* calendar.js */; };
 		B1553EDA228B10D600AF47F2 /* skyticket.js in Resources */ = {isa = PBXBuildFile; fileRef = B1553ED9228B10D600AF47F2 /* skyticket.js */; };
 		B1553EDC228B2A4F00AF47F2 /* DOMSupport.js in Resources */ = {isa = PBXBuildFile; fileRef = B1553EDB228B2A4F00AF47F2 /* DOMSupport.js */; };
+		B1553EDE228B3D2100AF47F2 /* DateTimeSupport.js in Resources */ = {isa = PBXBuildFile; fileRef = B1553EDD228B3D2100AF47F2 /* DateTimeSupport.js */; };
 		B1C1A4842289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4832289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements */; };
 		B1C1A4862289E7EE000BB2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1A4852289E7EE000BB2C3 /* AppDelegate.swift */; };
 		B1C1A4892289E7EE000BB2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4872289E7EE000BB2C3 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		B1553ED7228B106400AF47F2 /* calendar.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = calendar.js; sourceTree = "<group>"; };
 		B1553ED9228B10D600AF47F2 /* skyticket.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = skyticket.js; sourceTree = "<group>"; };
 		B1553EDB228B2A4F00AF47F2 /* DOMSupport.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DOMSupport.js; sourceTree = "<group>"; };
+		B1553EDD228B3D2100AF47F2 /* DateTimeSupport.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DateTimeSupport.js; sourceTree = "<group>"; };
 		B1B3C35C228AC729003E615D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1B3C35E228AC74E003E615D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1C1A4802289E7EE000BB2C3 /* SafariSkyticketToCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSkyticketToCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +183,7 @@
 				B1553ED7228B106400AF47F2 /* calendar.js */,
 				B1553ED9228B10D600AF47F2 /* skyticket.js */,
 				B1553EDB228B2A4F00AF47F2 /* DOMSupport.js */,
+				B1553EDD228B3D2100AF47F2 /* DateTimeSupport.js */,
 				B1C1A4B02289E7EF000BB2C3 /* ToolbarItemIcon.pdf */,
 				B1C1A4B22289E7EF000BB2C3 /* SafariSkyticketToCalendar_Extension.entitlements */,
 				B1B3C35D228AC729003E615D /* Localizable.strings */,
@@ -313,6 +316,7 @@
 				B1553ED0228AF08800AF47F2 /* detail.js in Resources */,
 				B1C1A4B12289E7EF000BB2C3 /* ToolbarItemIcon.pdf in Resources */,
 				B1553ECC228AD6BC00AF47F2 /* Localizable.strings in Resources */,
+				B1553EDE228B3D2100AF47F2 /* DateTimeSupport.js in Resources */,
 				B1C1A4AC2289E7EF000BB2C3 /* SafariExtensionViewController.xib in Resources */,
 				B1553EDA228B10D600AF47F2 /* skyticket.js in Resources */,
 				B1553EDC228B2A4F00AF47F2 /* DOMSupport.js in Resources */,

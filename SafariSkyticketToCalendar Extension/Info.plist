@@ -36,6 +36,14 @@
 					<string>https://skyticket.jp/user/application_detail.php</string>
 				</array>
 				<key>Script</key>
+				<string>DateTimeSupport.js</string>
+			</dict>
+			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://skyticket.jp/user/application_detail.php</string>
+				</array>
+				<key>Script</key>
 				<string>DOMSupport.js</string>
 			</dict>
 			<dict>

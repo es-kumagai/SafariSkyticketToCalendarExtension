@@ -6,7 +6,13 @@ safari.self.addEventListener("message", messageReceived);
 
 function messageReceived(event) {
     
-    alert('handled 3');
-    console.log(event.name);
-    console.log(event.message);
+    switch (event.name) {
+            
+        case "ScrapingDetailPage":
+            scrapingDetailPage();
+            break;
+            
+        default:
+            alert('Unknown message found: ' + event.name);
+    }
 }

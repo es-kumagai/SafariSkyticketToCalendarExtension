@@ -1,4 +1,5 @@
 
 function scrapingDetailPage() {
     
+    alert('scraping');
 }

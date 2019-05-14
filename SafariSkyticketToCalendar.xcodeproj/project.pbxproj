@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B1553ECC228AD6BC00AF47F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B3C35D228AC729003E615D /* Localizable.strings */; };
 		B1553ED0228AF08800AF47F2 /* detail.js in Resources */ = {isa = PBXBuildFile; fileRef = B1553ECF228AF08800AF47F2 /* detail.js */; };
+		B1553ED4228B024600AF47F2 /* SkyticketDetailPageInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1553ED3228B024600AF47F2 /* SkyticketDetailPageInformation.swift */; };
+		B1553ED6228B05BA00AF47F2 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1553ED5228B05BA00AF47F2 /* URL.swift */; };
 		B1C1A4842289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4832289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements */; };
 		B1C1A4862289E7EE000BB2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1A4852289E7EE000BB2C3 /* AppDelegate.swift */; };
 		B1C1A4892289E7EE000BB2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4872289E7EE000BB2C3 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 
 /* Begin PBXFileReference section */
 		B1553ECF228AF08800AF47F2 /* detail.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = detail.js; sourceTree = "<group>"; };
+		B1553ED3228B024600AF47F2 /* SkyticketDetailPageInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyticketDetailPageInformation.swift; sourceTree = "<group>"; };
+		B1553ED5228B05BA00AF47F2 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		B1B3C35C228AC729003E615D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1B3C35E228AC74E003E615D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1C1A4802289E7EE000BB2C3 /* SafariSkyticketToCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSkyticketToCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +167,8 @@
 				B1C1A4A62289E7EF000BB2C3 /* SafariExtensionHandler.swift */,
 				B1C1A4A82289E7EF000BB2C3 /* SafariExtensionViewController.swift */,
 				B1C1A4AA2289E7EF000BB2C3 /* SafariExtensionViewController.xib */,
+				B1553ED3228B024600AF47F2 /* SkyticketDetailPageInformation.swift */,
+				B1553ED5228B05BA00AF47F2 /* URL.swift */,
 				B1C1A4AD2289E7EF000BB2C3 /* Info.plist */,
 				B1C1A4AE2289E7EF000BB2C3 /* script.js */,
 				B1553ECF228AF08800AF47F2 /* detail.js */,
@@ -327,8 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1553ED4228B024600AF47F2 /* SkyticketDetailPageInformation.swift in Sources */,
 				B1C1A4A92289E7EF000BB2C3 /* SafariExtensionViewController.swift in Sources */,
 				B1C1A4A72289E7EF000BB2C3 /* SafariExtensionHandler.swift in Sources */,
+				B1553ED6228B05BA00AF47F2 /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

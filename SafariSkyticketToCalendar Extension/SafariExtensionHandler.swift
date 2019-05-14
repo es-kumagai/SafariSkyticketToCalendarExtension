@@ -25,8 +25,22 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             
             tab?.getActivePage { page in
 
-                NSLog("An active page \(page) was found.")
-                page?.dispatchMessageToScript(withName: "SkyticketToCalendarClicked", userInfo: ["Key" : 100])
+                guard let page = page else {
+                    
+                    return
+                }
+                
+                page.getPropertiesWithCompletionHandler { properties in
+                
+                    guard let information = properties?.url.map(SkyticketDetailPageInformation.init) else {
+                        
+                        return
+                    }
+                    
+                    page.dispatchMessageToScript(withName: "ScrapingDetailPage", userInfo: [
+                        "referenceNumber" : information?.referenceNumber ?? ""
+                        ])
+                }
             }
         }
     }

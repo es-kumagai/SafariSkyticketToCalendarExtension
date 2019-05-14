@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1553ECC228AD6BC00AF47F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B3C35D228AC729003E615D /* Localizable.strings */; };
+		B1553ECE228AEC2300AF47F2 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = B1553ECD228AEC2300AF47F2 /* style.css */; };
 		B1C1A4842289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4832289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements */; };
 		B1C1A4862289E7EE000BB2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1A4852289E7EE000BB2C3 /* AppDelegate.swift */; };
 		B1C1A4892289E7EE000BB2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4872289E7EE000BB2C3 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B1553ECD228AEC2300AF47F2 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		B1B3C35C228AC729003E615D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1B3C35E228AC74E003E615D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1C1A4802289E7EE000BB2C3 /* SafariSkyticketToCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSkyticketToCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,7 @@
 				B1C1A4B02289E7EF000BB2C3 /* ToolbarItemIcon.pdf */,
 				B1C1A4B22289E7EF000BB2C3 /* SafariSkyticketToCalendar_Extension.entitlements */,
 				B1B3C35D228AC729003E615D /* Localizable.strings */,
+				B1553ECD228AEC2300AF47F2 /* style.css */,
 			);
 			path = "SafariSkyticketToCalendar Extension";
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				B1C1A4B12289E7EF000BB2C3 /* ToolbarItemIcon.pdf in Resources */,
 				B1553ECC228AD6BC00AF47F2 /* Localizable.strings in Resources */,
+				B1553ECE228AEC2300AF47F2 /* style.css in Resources */,
 				B1C1A4AC2289E7EF000BB2C3 /* SafariExtensionViewController.xib in Resources */,
 				B1C1A4AF2289E7EF000BB2C3 /* script.js in Resources */,
 			);

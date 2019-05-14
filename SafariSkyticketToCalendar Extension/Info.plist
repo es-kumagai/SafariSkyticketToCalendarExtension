@@ -50,7 +50,7 @@
 		<dict>
 			<key>Allowed Domains</key>
 			<array>
-				<string>*.webkit.org</string>
+				<string>skyticket.jp</string>
 			</array>
 			<key>Level</key>
 			<string>Some</string>

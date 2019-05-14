@@ -20,6 +20,15 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     override func toolbarItemClicked(in window: SFSafariWindow) {
         // This method will be called when your toolbar item is clicked.
         NSLog("The extension's toolbar item was clicked")
+        
+        window.getActiveTab { tab in
+            
+            tab?.getActivePage { page in
+
+                NSLog("An active page \(page) was found.")
+                page?.dispatchMessageToScript(withName: "SkyticketToCalendarClicked", userInfo: ["Key" : 100])
+            }
+        }
     }
     
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {

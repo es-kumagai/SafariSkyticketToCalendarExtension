@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1B3C35B228AC729003E615D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B3C35D228AC729003E615D /* Localizable.strings */; };
+		B1553ECC228AD6BC00AF47F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B3C35D228AC729003E615D /* Localizable.strings */; };
 		B1C1A4842289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4832289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements */; };
 		B1C1A4862289E7EE000BB2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1A4852289E7EE000BB2C3 /* AppDelegate.swift */; };
 		B1C1A4892289E7EE000BB2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4872289E7EE000BB2C3 /* Main.storyboard */; };
@@ -293,7 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C1A4B12289E7EF000BB2C3 /* ToolbarItemIcon.pdf in Resources */,
-				B1B3C35B228AC729003E615D /* Localizable.strings in Resources */,
+				B1553ECC228AD6BC00AF47F2 /* Localizable.strings in Resources */,
 				B1C1A4AC2289E7EF000BB2C3 /* SafariExtensionViewController.xib in Resources */,
 				B1C1A4AF2289E7EF000BB2C3 /* script.js in Resources */,
 			);

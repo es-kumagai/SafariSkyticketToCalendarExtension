@@ -18,16 +18,13 @@
 "FKE-Sm-Kum.title" = "SafariSkyticketToCalendar Help";
 
 /* Class = "NSWindow"; title = "App Name"; ObjectID = "IQv-IB-iLA"; */
-"IQv-IB-iLA.title" = "App Name";
+"IQv-IB-iLA.title" = "EZ-NET skyticket 申込み詳細ページからカレンダーに登録";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "Show All";
 
 /* Class = "NSMenuItem"; title = "Hide SafariSkyticketToCalendar"; ObjectID = "Olw-nP-bQN"; */
 "Olw-nP-bQN.title" = "Hide SafariSkyticketToCalendar";
-
-/* Class = "NSTextFieldCell"; title = "App Name"; ObjectID = "S7v-7o-3vW"; */
-"S7v-7o-3vW.title" = "App Name";
 
 /* Class = "NSButtonCell"; alternateTitle = "Install"; ObjectID = "Srx-0j-A4D"; */
 "Srx-0j-A4D.alternateTitle" = "Install";
@@ -39,7 +36,11 @@
 "Vdr-fp-XzO.title" = "Hide Others";
 
 /* Class = "NSMenu"; title = "SafariSkyticketToCalendar"; ObjectID = "uQy-DD-JDr"; */
-"uQy-DD-JDr.title" = "SafariSkyticketToCalendar";
+"uQy-DD-JDr.title" = "EZ-NET skyticket 申込み詳細ページからカレンダーに登録";
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "Help";
+
+/* Class = "NSTextFieldCell"; title = "App Name"; ObjectID = "S7v-7o-3vW"; */
+"S7v-7o-3vW.title" = "このアプリは skyticket の申込み詳細ページから iCalendar ファイルを生成する Safari Extension です。";
+"ylp-jy-i76.title" = "Safari の環境設定で、この機能拡張を有効化すると、ツールバーにボタンが表示されます。そのボタンを skyticket.jp の申込み詳細画面で押すと、ページ内の詳細情報をカレンダーデータとしてダウンロードできます。";

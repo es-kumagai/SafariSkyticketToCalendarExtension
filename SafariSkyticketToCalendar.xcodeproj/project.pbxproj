@@ -70,6 +70,7 @@
 		B1553EDB228B2A4F00AF47F2 /* DOMSupport.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DOMSupport.js; sourceTree = "<group>"; };
 		B1553EDD228B3D2100AF47F2 /* DateTimeSupport.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DateTimeSupport.js; sourceTree = "<group>"; };
 		B1A6911B228BD53F009F3AC0 /* SafariSkyticketToCalendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SafariSkyticketToCalendar.pdf; sourceTree = "<group>"; };
+		B1A6911E228BF1A1009F3AC0 /* SafariSkyticketToCalendar.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SafariSkyticketToCalendar.svg; sourceTree = "<group>"; };
 		B1B3C35C228AC729003E615D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1B3C35E228AC74E003E615D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1C1A4802289E7EE000BB2C3 /* SafariSkyticketToCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSkyticketToCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +119,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1A6911D228BF179009F3AC0 /* Recource Creation */ = {
+			isa = PBXGroup;
+			children = (
+				B1A6911E228BF1A1009F3AC0 /* SafariSkyticketToCalendar.svg */,
+			);
+			path = "Recource Creation";
+			sourceTree = "<group>";
+		};
 		B1C1A4772289E7EE000BB2C3 = {
 			isa = PBXGroup;
 			children = (
+				B1A6911D228BF179009F3AC0 /* Recource Creation */,
 				B1C1A4822289E7EE000BB2C3 /* SafariSkyticketToCalendar */,
 				B1C1A4962289E7EF000BB2C3 /* SafariSkyticketToCalendarTests */,
 				B1C1A4A52289E7EF000BB2C3 /* SafariSkyticketToCalendar Extension */,

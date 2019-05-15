@@ -75,6 +75,8 @@
 		B1A6911E228BF1A1009F3AC0 /* SafariSkyticketToCalendar.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SafariSkyticketToCalendar.svg; sourceTree = "<group>"; };
 		B1A6911F228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Debug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SafariSkyticketToCalendar.Toolbar-Debug.png"; sourceTree = "<group>"; };
 		B1A69120228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Release.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SafariSkyticketToCalendar.Toolbar-Release.png"; sourceTree = "<group>"; };
+		B1A69124228C05DD009F3AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B1A69126228C05DE009F3AC0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		B1B3C35C228AC729003E615D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1B3C35E228AC74E003E615D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1C1A4802289E7EE000BB2C3 /* SafariSkyticketToCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSkyticketToCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -403,6 +405,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				B1C1A4882289E7EE000BB2C3 /* Base */,
+				B1A69124228C05DD009F3AC0 /* en */,
+				B1A69126228C05DE009F3AC0 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

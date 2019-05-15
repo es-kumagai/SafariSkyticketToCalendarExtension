@@ -19,7 +19,8 @@ class ViewController: NSViewController {
     }
     
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: "jp.ez-net.SafariSkyticketToCalendar-Extension") { error in
+        
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: "\(Bundle.main.bundleIdentifier!)-Extension") { error in
             if let _ = error {
                 // Insert code to inform the user that something went wrong.
 

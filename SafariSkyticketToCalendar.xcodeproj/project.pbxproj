@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1553ECC228AD6BC00AF47F2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B3C35D228AC729003E615D /* Localizable.strings */; };
+		B1553ECC228AD6BC00AF47F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1B3C35D228AC729003E615D /* InfoPlist.strings */; };
 		B1553ED0228AF08800AF47F2 /* detail.js in Resources */ = {isa = PBXBuildFile; fileRef = B1553ECF228AF08800AF47F2 /* detail.js */; };
 		B1553ED4228B024600AF47F2 /* SkyticketDetailPageInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1553ED3228B024600AF47F2 /* SkyticketDetailPageInformation.swift */; };
 		B1553ED6228B05BA00AF47F2 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1553ED5228B05BA00AF47F2 /* URL.swift */; };
@@ -70,8 +70,8 @@
 		B1553EDB228B2A4F00AF47F2 /* DOMSupport.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DOMSupport.js; sourceTree = "<group>"; };
 		B1553EDD228B3D2100AF47F2 /* DateTimeSupport.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = DateTimeSupport.js; sourceTree = "<group>"; };
 		B1A6911B228BD53F009F3AC0 /* SafariSkyticketToCalendar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SafariSkyticketToCalendar.pdf; sourceTree = "<group>"; };
-		B1B3C35C228AC729003E615D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B1B3C35E228AC74E003E615D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1B3C35C228AC729003E615D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1B3C35E228AC74E003E615D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1C1A4802289E7EE000BB2C3 /* SafariSkyticketToCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSkyticketToCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C1A4832289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariSkyticketToCalendar.entitlements; sourceTree = "<group>"; };
 		B1C1A4852289E7EE000BB2C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 				B1553EDD228B3D2100AF47F2 /* DateTimeSupport.js */,
 				B1A6911B228BD53F009F3AC0 /* SafariSkyticketToCalendar.pdf */,
 				B1C1A4B22289E7EF000BB2C3 /* SafariSkyticketToCalendar_Extension.entitlements */,
-				B1B3C35D228AC729003E615D /* Localizable.strings */,
+				B1B3C35D228AC729003E615D /* InfoPlist.strings */,
 			);
 			path = "SafariSkyticketToCalendar Extension";
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1553ED0228AF08800AF47F2 /* detail.js in Resources */,
-				B1553ECC228AD6BC00AF47F2 /* Localizable.strings in Resources */,
+				B1553ECC228AD6BC00AF47F2 /* InfoPlist.strings in Resources */,
 				B1553EDE228B3D2100AF47F2 /* DateTimeSupport.js in Resources */,
 				B1C1A4AC2289E7EF000BB2C3 /* SafariExtensionViewController.xib in Resources */,
 				B1553EDA228B10D600AF47F2 /* skyticket.js in Resources */,
@@ -372,13 +372,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B1B3C35D228AC729003E615D /* Localizable.strings */ = {
+		B1B3C35D228AC729003E615D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B1B3C35C228AC729003E615D /* en */,
 				B1B3C35E228AC74E003E615D /* ja */,
 			);
-			name = Localizable.strings;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		B1C1A4872289E7EE000BB2C3 /* Main.storyboard */ = {

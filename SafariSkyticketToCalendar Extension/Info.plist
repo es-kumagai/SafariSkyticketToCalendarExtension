@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>SafariSkyticketToCalendar Extension</string>
+	<string>EZ-NET SafariSkyticketToCalendar Extension</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -99,6 +101,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Tomohiro Kumagai. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
-	<string>This is a Safari Extension. You should tell us what your extension does here.</string>
+	<string>This is a Safari Extension that generate iCalendar from skyticket&apos;s reservation detail page in Japanese.</string>
 </dict>
 </plist>

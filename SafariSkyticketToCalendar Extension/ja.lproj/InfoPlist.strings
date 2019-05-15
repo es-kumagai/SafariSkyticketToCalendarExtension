@@ -8,5 +8,5 @@
 
 CFBundleDisplayName = "EZ-NET skyticket 申込み詳細ページからカレンダーに登録";
 NSHumanReadableDescription = "skyticket の申込み詳細ページから iCalendar ファイルを生成する拡張機能です。";
-NSExtension.SFSafariToolbarItem.Label = "skyticket の予約情報をカレンダーに登録";
+"Toolbar Button Label for Identifier: SkyticketToCalendar" = "skyticket の予約情報をカレンダーに登録";
 

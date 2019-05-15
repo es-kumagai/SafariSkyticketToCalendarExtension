@@ -27,12 +27,12 @@ function scrapingDetailPage() {
     
     const caption = 'skyticket reservation';
     const data = createCalendarDataWithEvents(caption, events);
-    const dataURI = createDataURI(data);
-
+    const dataURI = createDataURI(data, 'text/calendar');
+    
     console.log('Downloading calendar data ...');
     
-    window.open(dataURI, caption);
-    
+    openURI(dataURI);
+
     console.log('Process finished.');
 }
 
@@ -228,9 +228,4 @@ function createCalendarDataWithEvents(caption, events) {
                         ]);
     
     return data;
-}
-
-function createDataURI(data) {
-    
-    return 'data:text/calendar;charset=utf8,' + encodeURI(data.join('\n'));
 }

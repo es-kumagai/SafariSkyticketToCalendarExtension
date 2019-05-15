@@ -189,15 +189,15 @@ function createEventFromSchedule(schedule, descriptionText) {
 
     console.log('Creating an event ...');
     
-    const ticketHeader = schedule.getTicketHeader();
-    const airlineNumber = schedule.getAirlineNumber();
-    const ticketBody = schedule.getTicketBody();
-    const passengers = schedule.getPassengers();
+    const ticketHeader = schedule.ticketHeader;
+    const airlineNumber = schedule.airlineNumber;
+    const ticketBody = schedule.ticketBody;
+    const passengers = schedule.passengers;
     
-    const fligntNumber = ticketHeader.getFlightNumber();
-    const departureDateTime = ticketBody.getDepartureDateTime();
-    const arrivalDateTime = ticketBody.getArrivalDateTime();
-    const departurePortLocation = ticketBody.getDeparturePortLocation();
+    const fligntNumber = ticketHeader.flightNumber;
+    const departureDateTime = ticketBody.departureDateTime;
+    const arrivalDateTime = ticketBody.arrivalDateTime;
+    const departurePortLocation = ticketBody.departurePortLocation;
 
     console.log('Flight Number: ' + fligntNumber);
     console.log('Departure Date: ' + departureDateTime);
@@ -232,7 +232,7 @@ function createCalendarDataWithEvents(caption, events) {
     
     for (let index = 0; index != events.length; ++index) {
         
-        data = data.concat(events[index].getVEventData());
+        data = data.concat(events[index].vEventData);
     }
     
     data = data.concat([

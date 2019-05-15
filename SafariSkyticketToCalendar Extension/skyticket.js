@@ -110,31 +110,31 @@ class TicketHeader {
     }
     
     // 便名を取得します。
-    getFlightNumber() {
+    get flightNumber() {
         
         return this._flightNumber;
     }
     
     // 座席クラスを取得します。
-    getSeatClass() {
+    get seatClass() {
         
         return this._seatClass;
     }
     
     // 券種を取得します。
-    getTicketType() {
+    get ticketType() {
         
         return this._ticketType;
     }
     
     // 出発元を取得します。
-    getDeparture() {
+    get departure() {
         
         return this._departure;
     }
     
     // 到着先を取得します。
-    getArrival() {
+    get arrival() {
         
         return this._arrival;
     }
@@ -148,7 +148,7 @@ class AirlineNumber {
     }
     
     // 予約番号を取得します。
-    getConfirmationNumber() {
+    get confirmationNumber() {
         
         return this._confirmationNumber;
     }
@@ -167,49 +167,49 @@ class TicketBody {
         this._arrivalPort = arrivalPort;
     }
 
-    getDepartureDate() {
+    get departureDate() {
         
         return this._departureDate;
     }
     
-    getDepartureTime() {
+    get departureTime() {
         
         return this._departureTime;
     }
     
-    getDeparturePort() {
+    get departurePort() {
         
         return this._departurePort;
     }
     
-    getArrivalDate() {
+    get arrivalDate() {
         
         return this._arrivalDate;
     }
     
-    getArrivalTime() {
+    get arrivalTime() {
         
         return this._arrivalTime;
     }
     
-    getArrivalPort() {
+    get arrivalPort() {
         
         return this._arrivalPort;
     }
     
-    getDepartureDateTime() {
+    get departureDateTime() {
         
-        return makeDateTimeFromMonthDayTextAndTimeText(this.getDepartureDate(), this.getDepartureTime());
+        return makeDateTimeFromMonthDayTextAndTimeText(this.departureDate, this.departureTime);
     }
     
-    getArrivalDateTime() {
+    get arrivalDateTime() {
         
-        return makeDateTimeFromMonthDayTextAndTimeText(this.getArrivalDate(), this.getArrivalTime());
+        return makeDateTimeFromMonthDayTextAndTimeText(this.arrivalDate, this.arrivalTime);
     }
     
-    getDeparturePortLocation() {
+    get departurePortLocation() {
         
-        const name = getAirportName(this.getDeparturePort());
+        const name = getAirportName(this.departurePort);
         const address = airportAddressTable[name].replace(/,/g, '\\,');
         
         if (address) {
@@ -233,22 +233,22 @@ class Schedule {
         this._passengers = passengers;
     }
     
-    getTicketHeader() {
+    get ticketHeader() {
         
         return this._ticketHeader;
     }
     
-    getAirlineNumber() {
+    get airlineNumber() {
         
         return this._airlineNumber;
     }
     
-    getTicketBody() {
+    get ticketBody() {
         
         return this._ticketBody;
     }
     
-    getPassengers() {
+    get passengers() {
         
         return this._passengers;
     }

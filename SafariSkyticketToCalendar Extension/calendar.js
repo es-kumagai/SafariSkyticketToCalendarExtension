@@ -19,58 +19,58 @@ class Event {
         this._url = url;
     }
     
-    getSummary() {
+    get summary() {
         
         return this._summary;
     }
     
-    getDTStart() {
+    get dtStart() {
         
         return this._dtstart;
     }
     
-    getDTEnd() {
+    get dtEnd() {
         
         return this._dtend;
     }
     
-    getDTStamp() {
+    get dtStamp() {
         
         return this._dtstamp;
     }
     
-    getCreated() {
+    get created() {
         
         return this._created;
     }
     
-    getDescription() {
+    get description() {
         
         return this._description;
     }
     
-    getLocation() {
+    get location() {
         
         return this._location;
     }
     
-    getUrl() {
+    get url() {
         
         return this._url;
     }
     
-    getVEventData() {
+    get vEventData() {
         
         return [
                       'BEGIN:VEVENT',
-                      'SUMMARY:' + this.getSummary(),
-                      'DTSTART;TZID=JST;VALUE=DATE-TIME:' + this.getDTStart(),
-                      'DTEND;TZID=JST;VALUE=DATE-TIME:' + this.getDTEnd(),
-                      'DTSTAMP;VALUE=DATE-TIME:' + this.getDTStamp(),
-                      'CREATED;VALUE=DATE-TIME:' + this.getCreated(),
-                      'DESCRIPTION:' + this.getDescription(),
-                      'LOCATION:' + this.getLocation(),
-                      'URL:' + this.getUrl(),
+                      'SUMMARY:' + this.summary,
+                      'DTSTART;TZID=JST;VALUE=DATE-TIME:' + this.dtStart,
+                      'DTEND;TZID=JST;VALUE=DATE-TIME:' + this.dtEnd,
+                      'DTSTAMP;VALUE=DATE-TIME:' + this.dtStamp,
+                      'CREATED;VALUE=DATE-TIME:' + this.created,
+                      'DESCRIPTION:' + this.description,
+                      'LOCATION:' + this.location,
+                      'URL:' + this.url,
                       'END:VEVENT'
                       ];
     }

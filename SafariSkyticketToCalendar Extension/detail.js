@@ -3,7 +3,12 @@ function scrapingDetailPage() {
 
     console.log('Start scraping ...');
     
-    const scheduleTables = document.getElementsByClassName('rsv_schedule_table');
+    const rootNode = document.getElementsByClassName('reserve_detail')[0];
+    
+    const descriptionTitle = scrapingScheduleDescriptionTitle(rootNode);
+    console.log(descriptionTitle);
+    
+    const scheduleTables = rootNode.getElementsByClassName('rsv_schedule_table');
     const scheduleTableCount = scheduleTables.length;
 
     console.log(String(scheduleTableCount) + ' schedules found.');
@@ -18,14 +23,14 @@ function scrapingDetailPage() {
         const description = scheduleTable.innerText;
         
         const schedule = scrapingScheduleTable(scheduleTable);
-        const event = createEventFromSchedule(schedule, description);
+        const event = createEventFromSchedule(schedule, descriptionTitle + '\n\n' + description);
         
         events.push(event);
     }
     
     console.log('Creating Calendar Data ...');
     
-    const caption = 'skyticket reservation';
+    const caption = 'skyticket ' + descriptionTitle;
     const data = createCalendarDataWithEvents(caption, events);
     const dataURI = createDataURI(data, 'text/calendar');
     
@@ -34,6 +39,13 @@ function scrapingDetailPage() {
     openURI(dataURI);
 
     console.log('Process finished.');
+}
+
+function scrapingScheduleDescriptionTitle(targetNode) {
+
+    const titleNode = targetNode.getElementsByClassName('mypage_main_title')[0];
+    
+    return titleNode.innerText.trim();
 }
 
 function scrapingScheduleTable(targetNode) {

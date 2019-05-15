@@ -18,6 +18,7 @@
 		B1A6911C228BD53F009F3AC0 /* SafariSkyticketToCalendar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B1A6911B228BD53F009F3AC0 /* SafariSkyticketToCalendar.pdf */; };
 		B1A69121228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Debug.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A6911F228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Debug.png */; };
 		B1A69122228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Release.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A69120228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Release.png */; };
+		B1A6912C228C48F3009F3AC0 /* SafariService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A6912B228C48F3009F3AC0 /* SafariService.swift */; };
 		B1C1A4842289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4832289E7EE000BB2C3 /* SafariSkyticketToCalendar.entitlements */; };
 		B1C1A4862289E7EE000BB2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1A4852289E7EE000BB2C3 /* AppDelegate.swift */; };
 		B1C1A4892289E7EE000BB2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C1A4872289E7EE000BB2C3 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		B1A69124228C05DD009F3AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B1A69126228C05DE009F3AC0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		B1A6912A228C3DE4009F3AC0 /* SafariSkyticketToCalendar.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = SafariSkyticketToCalendar.html; sourceTree = "<group>"; };
+		B1A6912B228C48F3009F3AC0 /* SafariService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariService.swift; sourceTree = "<group>"; };
 		B1B3C35C228AC729003E615D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1B3C35E228AC74E003E615D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1C1A4802289E7EE000BB2C3 /* SafariSkyticketToCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariSkyticketToCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +207,7 @@
 				B1C1A4AA2289E7EF000BB2C3 /* SafariExtensionViewController.xib */,
 				B1553ED3228B024600AF47F2 /* SkyticketDetailPageInformation.swift */,
 				B1553ED5228B05BA00AF47F2 /* URL.swift */,
+				B1A6912B228C48F3009F3AC0 /* SafariService.swift */,
 				B1C1A4AD2289E7EF000BB2C3 /* Info.plist */,
 				B1C1A4AE2289E7EF000BB2C3 /* script.js */,
 				B1553ECF228AF08800AF47F2 /* detail.js */,
@@ -383,6 +386,7 @@
 				B1C1A4A92289E7EF000BB2C3 /* SafariExtensionViewController.swift in Sources */,
 				B1C1A4A72289E7EF000BB2C3 /* SafariExtensionHandler.swift in Sources */,
 				B1553ED6228B05BA00AF47F2 /* URL.swift in Sources */,
+				B1A6912C228C48F3009F3AC0 /* SafariService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

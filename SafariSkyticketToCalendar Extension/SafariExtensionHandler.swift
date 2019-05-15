@@ -19,28 +19,22 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     
     override func toolbarItemClicked(in window: SFSafariWindow) {
         
-        window.getActiveTab { tab in
+        window.getActivePageProperties { page, properties in
             
-            tab?.getActivePage { page in
-
-                guard let page = page else {
-                    
-                    return
-                }
+            guard let page = page else {
                 
-                page.getPropertiesWithCompletionHandler { properties in
-                
-                    guard let url = properties?.url, let information = SkyticketDetailPageInformation(url) else {
-                        
-                        page.dispatchMessageToScript(withName: "IncompatiblePage", userInfo: nil)
-                        return
-                    }
-                    
-                    page.dispatchMessageToScript(withName: "ScrapingDetailPage", userInfo: [
-                        "referenceNumber" : information.referenceNumber ?? ""
-                        ])
-                }
+                return
             }
+            
+            guard let url = properties?.url, let information = SkyticketDetailPageInformation(url) else {
+                
+                page.dispatchMessageToScript(withName: "IncompatiblePage", userInfo: nil)
+                return
+            }
+            
+            page.dispatchMessageToScript(withName: "ScrapingDetailPage", userInfo: [
+                "referenceNumber" : information.referenceNumber ?? ""
+                ])
         }
     }
     

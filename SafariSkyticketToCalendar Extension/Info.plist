@@ -21,7 +21,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSExtension</key>
@@ -84,7 +84,7 @@
 			<key>Identifier</key>
 			<string>SkyticketToCalendar</string>
 			<key>Image</key>
-			<string>SafariSkyticketToCalendar.pdf</string>
+			<string>SafariSkyticketToCalendar.Toolbar-$(CONFIGURATION).png</string>
 			<key>Label</key>
 			<string>Skyticket Reservation to iCalendar</string>
 		</dict>

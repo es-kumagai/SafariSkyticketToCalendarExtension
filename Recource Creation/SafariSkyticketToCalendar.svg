@@ -16,11 +16,44 @@
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="SafariSkyticketToCalendar.svg"
-   inkscape:export-filename="/Volumes/iSCSI-Storage/アプリ用アイコン制作/SafariSkyticketToCalendar.1024.png"
+   inkscape:export-filename="/Users/tomohiro/Temporary/SafariSkyticketToCalendar.Toolbar-Debug.png"
    inkscape:export-xdpi="123.85523"
    inkscape:export-ydpi="123.85523">
   <defs
-     id="defs2" />
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter1100">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood1090" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite1092" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.2"
+         result="blur"
+         id="feGaussianBlur1094" />
+      <feOffset
+         dx="2"
+         dy="2"
+         result="offset"
+         id="feOffset1096" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite1098" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -30,7 +63,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
      inkscape:cx="440.88523"
-     inkscape:cy="395.25035"
+     inkscape:cy="505.24795"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -47,15 +80,30 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Base"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#ffff10;fill-opacity:1;stroke:#8a000c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect883"
+       width="208.47023"
+       height="208.20296"
+       x="1.0690781"
+       y="1.2624983" />
+  </g>
+  <g
+     inkscape:label="Calendar Background (White)"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-87)">
+     transform="translate(0,-87)"
+     style="display:inline">
     <rect
        transform="scale(-1)"
        ry="8.6159582"
@@ -65,8 +113,14 @@
        width="153.46269"
        id="rect5442"
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.72249699;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Calendar"
+     style="display:inline">
     <rect
-       style="fill:#de645e;fill-opacity:1;stroke:none;stroke-width:8.28713989;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#de645e;fill-opacity:1;stroke:none;stroke-width:8.28713989;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4525"
        width="154.38478"
        height="39.796272"
@@ -74,23 +128,18 @@
        y="-143.18198"
        rx="0"
        ry="0"
-       transform="scale(1,-1)" />
+       transform="matrix(1,0,0,-1,0,-87.000001)" />
     <rect
-       style="fill:none;fill-opacity:1;stroke:#7a5345;stroke-width:5.72249699;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:none;fill-opacity:1;stroke:#7a5345;stroke-width:5.72249699;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4523"
        width="153.46269"
        height="155.4386"
        x="-169.67088"
        y="-256.98013"
        ry="8.6159582"
-       transform="scale(-1)" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Days"
-     style="display:inline">
+       transform="rotate(180,0,-43.5)" />
     <g
+       style="display:inline"
        transform="translate(0,-87.000001)"
        id="g5412">
       <g
@@ -199,6 +248,11 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Days"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Export">
     <g
@@ -234,5 +288,23 @@
            inkscape:connector-curvature="0" />
       </g>
     </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Development"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:38.80555725px;line-height:1.25;font-family:'ヒラギノ角ゴシック';-inkscape-font-specification:'ヒラギノ角ゴシック, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffff10;fill-opacity:1;stroke:#8a000c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1100)"
+       x="204.22589"
+       y="49.940174"
+       id="text928"
+       transform="rotate(-30.040253,305.50704,451.88282)"><tspan
+         sodipodi:role="line"
+         x="204.22589"
+         y="49.940174"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:38.80555725px;font-family:'ヒラギノ角ゴシック';-inkscape-font-specification:'ヒラギノ角ゴシック, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffff10;fill-opacity:1;stroke:#8a000c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="tspan930">DEVELOP</tspan></text>
   </g>
 </svg>

@@ -223,7 +223,7 @@ function createCalendarDataWithEvents(caption, events) {
     let data = [
                 'BEGIN:VCALENDAR',
                 'VERSION:2.0',
-                'PRODID:-//ez-net.jp//JRExpressRideToCalendar',
+                'PRODID:-//ez-net.jp//SafariSkyticketToCalendar',
                 'CALSCALE:GREGORIAN',
                 'METHOD:PUBLISH',
                 'X-WR-CALNAME:' + convertToContentTextFrom(caption),

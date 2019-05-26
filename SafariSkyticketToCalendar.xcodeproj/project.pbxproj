@@ -128,6 +128,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1A1DE42229A5CE3008FB896 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B1A6911B228BD53F009F3AC0 /* SafariSkyticketToCalendar.pdf */,
+				B1A6911F228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Debug.png */,
+				B1A69120228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Release.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B1A1DE43229A5D08008FB896 /* Script Injection */ = {
+			isa = PBXGroup;
+			children = (
+				B1C1A4AE2289E7EF000BB2C3 /* script.js */,
+				B1553ECF228AF08800AF47F2 /* detail.js */,
+				B1553ED7228B106400AF47F2 /* calendar.js */,
+				B1553ED9228B10D600AF47F2 /* skyticket.js */,
+				B1553EDB228B2A4F00AF47F2 /* DOMSupport.js */,
+				B1553EDD228B3D2100AF47F2 /* DateTimeSupport.js */,
+			);
+			path = "Script Injection";
+			sourceTree = "<group>";
+		};
 		B1A6911D228BF179009F3AC0 /* Recource Creation */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,8 +223,8 @@
 		B1C1A4A52289E7EF000BB2C3 /* SafariSkyticketToCalendar Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B1A6911F228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Debug.png */,
-				B1A69120228BFD4E009F3AC0 /* SafariSkyticketToCalendar.Toolbar-Release.png */,
+				B1A1DE42229A5CE3008FB896 /* Resource */,
+				B1A1DE43229A5D08008FB896 /* Script Injection */,
 				B1C1A4A62289E7EF000BB2C3 /* SafariExtensionHandler.swift */,
 				B1C1A4A82289E7EF000BB2C3 /* SafariExtensionViewController.swift */,
 				B1C1A4AA2289E7EF000BB2C3 /* SafariExtensionViewController.xib */,
@@ -209,13 +232,6 @@
 				B1553ED5228B05BA00AF47F2 /* URL.swift */,
 				B1A6912B228C48F3009F3AC0 /* SafariService.swift */,
 				B1C1A4AD2289E7EF000BB2C3 /* Info.plist */,
-				B1C1A4AE2289E7EF000BB2C3 /* script.js */,
-				B1553ECF228AF08800AF47F2 /* detail.js */,
-				B1553ED7228B106400AF47F2 /* calendar.js */,
-				B1553ED9228B10D600AF47F2 /* skyticket.js */,
-				B1553EDB228B2A4F00AF47F2 /* DOMSupport.js */,
-				B1553EDD228B3D2100AF47F2 /* DateTimeSupport.js */,
-				B1A6911B228BD53F009F3AC0 /* SafariSkyticketToCalendar.pdf */,
 				B1C1A4B22289E7EF000BB2C3 /* SafariSkyticketToCalendar_Extension.entitlements */,
 				B1B3C35D228AC729003E615D /* InfoPlist.strings */,
 			);

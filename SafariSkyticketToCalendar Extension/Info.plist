@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>LSHasLocalizedDisplayName</key>
-	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -22,6 +20,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>2</string>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSExtension</key>
@@ -33,18 +33,10 @@
 		<key>SFSafariContentScript</key>
 		<array>
 			<dict>
-				<key>Allowed URL Patterns</key>
-				<array>
-					<string>https://skyticket.jp/user/application_detail.php</string>
-				</array>
 				<key>Script</key>
 				<string>DateTimeSupport.js</string>
 			</dict>
 			<dict>
-				<key>Allowed URL Patterns</key>
-				<array>
-					<string>https://skyticket.jp/user/application_detail.php</string>
-				</array>
 				<key>Script</key>
 				<string>DOMSupport.js</string>
 			</dict>
@@ -57,10 +49,6 @@
 				<string>detail.js</string>
 			</dict>
 			<dict>
-				<key>Allowed URL Patterns</key>
-				<array>
-					<string>https://skyticket.jp/user/application_detail.php</string>
-				</array>
 				<key>Script</key>
 				<string>calendar.js</string>
 			</dict>
@@ -75,6 +63,14 @@
 			<dict>
 				<key>Script</key>
 				<string>script.js</string>
+			</dict>
+			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://travel.willer.co.jp/dy/3/bus/pc/mypage/yoyakuNaiyoShosai/*</string>
+				</array>
+				<key>Script</key>
+				<string>willer.js</string>
 			</dict>
 		</array>
 		<key>SFSafariToolbarItem</key>
@@ -93,6 +89,7 @@
 			<key>Allowed Domains</key>
 			<array>
 				<string>skyticket.jp</string>
+				<string>travel.willer.co.jp</string>
 			</array>
 			<key>Level</key>
 			<string>Some</string>

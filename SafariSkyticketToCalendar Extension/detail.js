@@ -218,26 +218,3 @@ function createEventFromSchedule(schedule, descriptionText) {
     return new Event(summary, dtstart, dtend, dtstamp, created, description, location, url);
 }
 
-function createCalendarDataWithEvents(caption, events) {
-    
-    let data = [
-                'BEGIN:VCALENDAR',
-                'VERSION:2.0',
-                'PRODID:-//ez-net.jp//SafariSkyticketToCalendar',
-                'CALSCALE:GREGORIAN',
-                'METHOD:PUBLISH',
-                'X-WR-CALNAME:' + convertToContentTextFrom(caption),
-                'X-WR-TIMEZONE:JST'
-                ];
-    
-    for (let index = 0; index != events.length; ++index) {
-        
-        data = data.concat(events[index].vEventData);
-    }
-    
-    data = data.concat([
-                        'END:VCALENDAR'
-                        ]);
-    
-    return data;
-}

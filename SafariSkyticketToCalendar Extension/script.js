@@ -7,6 +7,10 @@ function messageReceived(event) {
         case "ScrapingDetailPage":
             scrapingDetailPage();
             break;
+            
+        case "ScrapingDetailPageForWILLER":
+            makeWillerCalendar();
+            break;
      
         case "IncompatiblePage":
             alert('This extension can be use only reservation detail page of skyticket.jp.');

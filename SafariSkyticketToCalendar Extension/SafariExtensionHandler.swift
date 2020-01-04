@@ -26,15 +26,14 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
                 return
             }
             
-            guard let url = properties?.url, let information = SkyticketDetailPageInformation(url) else {
+            guard let url = properties?.url else {
                 
                 page.dispatchMessageToScript(withName: "IncompatiblePage", userInfo: nil)
                 return
             }
             
-            page.dispatchMessageToScript(withName: "ScrapingDetailPage", userInfo: [
-                "referenceNumber" : information.referenceNumber ?? ""
-                ])
+            SkyticketDetailPageInformation(url)?.dispatchMessage(to: page)
+            WillerDetailPageInformation(url)?.dispatchMessage(to: page)
         }
     }
     

@@ -6,13 +6,13 @@
 //  Copyright © 2019 Tomohiro Kumagai. All rights reserved.
 //
 
-import Foundation
+import SafariServices
 
-class SkyticketDetailPageInformation {
+class SkyticketDetailPageInformation : DetailPageInformation {
     
     private(set) var referenceNumber: String?
     
-    init?(_ url: URL) {
+    required init?(_ url: URL) {
         
         guard url.host == "skyticket.jp", url.path == "/user/application_detail.php" else {
             
@@ -23,5 +23,12 @@ class SkyticketDetailPageInformation {
             
             referenceNumber = value
         }
+    }
+    
+    func dispatchMessage(to page: SFSafariPage) {
+        
+        page.dispatchMessageToScript(withName: "ScrapingDetailPage", userInfo: [
+            "referenceNumber" : referenceNumber ?? ""
+            ])
     }
 }
